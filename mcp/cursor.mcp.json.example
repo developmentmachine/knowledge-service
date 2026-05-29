@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "knowledge-service": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/ABSOLUTE/PATH/TO/knowledge-service",
+        "run",
+        "knowledge-mcp"
+      ],
+      "env": {
+        "KNOWLEDGE_SERVICE_URL": "http://127.0.0.1:8001"
+      }
+    }
+  }
+}

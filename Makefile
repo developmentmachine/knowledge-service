@@ -1,4 +1,4 @@
-.PHONY: setup run test lint docker-build docker-up docker-down
+.PHONY: setup run run-mcp test lint docker-build docker-up docker-down
 
 setup:
 	uv venv
@@ -6,6 +6,9 @@ setup:
 
 run:
 	uvicorn app.main:app --reload --host 0.0.0.0 --port 8001
+
+run-mcp:
+	uv run knowledge-mcp
 
 test:
 	pytest tests/
